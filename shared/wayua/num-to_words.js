@@ -6,6 +6,6 @@ var num_to_words = function (num){
 
 	for (var i = 0; i<len; i++) {
 
-	numWords += numWords.concat() 
+	numWords =
 	}
  }
