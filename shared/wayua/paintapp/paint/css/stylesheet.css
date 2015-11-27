@@ -1,0 +1,133 @@
+@charset "UTF-8"; 
+/* CSS Document */ 
+  
+* { margin:0; padding:0; } 
+  
+body { 
+  background:url(../images/bg.gif) repeat-x #f8f8f8; 
+  color:#d7d7d7; 
+  font-family:"Belle","Comic Sans MS", cursive; 
+  font-size:25px; 
+  line-height:27px;} 
+
+  .noscript { 
+  	padding:50px 30px 0 40px; 
+  	width:820px; 
+  } 
+
+#selector { 
+ position:absolute; 
+ z-index:99999; 
+ margin-top:-30px; 
+ } 
+
+select { 
+ font-family:Verdana, Geneva, sans-serif; 
+ font-size:12px; 
+ background-color:#EAEAEA; 
+ }
+
+ #colors {
+	float: right;
+	margin-top: -30px;
+}
+
+#colorTable { 
+ width:231px; 
+ height:132px; 
+ position:absolute; 
+ margin-top:8px; 
+ z-index:999999; 
+ right:80px; 
+ background-color: #000000; 
+ display:none; 
+ cursor:pointer; 
+ } 
+.color { 
+   position:relative; 
+   height:7px; 
+   width:7px; 
+   float:left; 
+   padding:1px; 
+   margin:1px; 
+   } 
+.color:hover{ border:solid 1px #FFF; margin:0px; }
+.swatch {
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	box-shadow: inset 0px 1px 0px rgba(255,255,255,0.5), 0px 2px 2px rgba(0,0,0,0.5);
+	display: inline-block;
+	margin-left: 6px;
+	background-color: cyan;
+
+}
+  
+#wrapper { 
+  position:relative; 
+  width:960px; 
+  margin:0 auto; 
+  padding-top:75px;} 
+  
+<!-- Blackboard -->
+  #blackboardPlaceholder { 
+  background:url(../images/blackboard.png) no-repeat; 
+  width:924px; 
+  height:599px; 
+  margin:0 auto; 
+  padding:14px 0 75px 14px; 
+  cursor:crosshair; 
+} 
+
+#drawingCanvas { 
+ position:absolute; 
+ border:none; 
+ color:#FFF; 
+ overflow:hidden; 
+ background-color:transparent; 
+ } 
+#tempCanvas { 
+	position: absolute;
+	
+	width:600px; 
+	height:432px; 
+	overflow:hidden; 
+}
+
+#eraser { 
+ position:absolute; 
+ background:url(../images/eraser.png) no-repeat; 
+ left: 737px; 
+ top: 568px; 
+ width: 139px; 
+ height: 67px; 
+ z-index:99999; 
+ cursor:pointer; 
+ }
+
+ #stroke-subtract { 
+ position:absolute; 
+ top:436px; 
+ left:-13px; 
+ z-index:999999; 
+ cursor:pointer; 
+ } 
+#stroke-add { 
+   position:absolute; 
+   top:436px; 
+   left:5px; 
+   z-index:999999; 
+   cursor:pointer; 
+   } 
+#strokeWeight { 
+ background:url(../images/stroke-style.png) no-repeat; 
+ width:43px; 
+ height:153px; 
+ position:absolute; 
+ top:456px; 
+ left:-18px; 
+ z-index:1; 
+ padding:8px 0 0 7px; 
+ } 
+.stroke { cursor:pointer; margin-bottom:3px; }
+#nuke { position:absolute; cursor:pointer; margin-top:-10px; right:100px; 
